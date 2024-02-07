@@ -640,14 +640,6 @@ video {
   background-color: #121826a6;
 }
 
-.bg-\[url\(\'\.\.\/assets\/bg\.jpg\'\)\] {
-  background-image: url('../assets/bg.jpg');
-}
-
-.bg-\[url\(\'\.\.\/assets\/cover-1\.png\'\)\] {
-  background-image: url('../assets/cover-1.png');
-}
-
 .bg-\[url\(\'\.\/assets\/bg\.jpg\'\)\] {
   background-image: url('./assets/bg.jpg');
 }
@@ -683,8 +675,12 @@ video {
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-.opacity-70 {
-  opacity: 0.7;
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-85 {
+  opacity: 0.85;
 }
 
 .drop-shadow-pink-shadow {
