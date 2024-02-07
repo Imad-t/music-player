@@ -1,15 +1,15 @@
 const songs = [
     {
-        src: "../assets/lost-in-city-lights-145038.mp3",
+        src: "./assets/lost-in-city-lights-145038.mp3",
         name: "Lost in the City Lights",
         artist: "Cosmo Sheldrake",
-        cover: '../assets/cover-1.png'
+        cover: './assets/cover-1.png'
     },
     {
-        src: "../assets/forest-lullaby-110624.mp3",
+        src: "./assets/forest-lullaby-110624.mp3",
         name: "Forest Lullaby",
         artist: "Lesfm",
-        cover: '../assets/cover-2.png'
+        cover: './assets/cover-2.png'
     }
 ];
 
@@ -30,7 +30,7 @@ function nextSong(){
     audioPlayer.src = songs[song].src;
     songName.textContent = songs[song].name;
     artistName.textContent = songs[song].artist;
-    playImg.src = "../assets/Pause_fill.svg";
+    playImg.src = "./assets/Pause_fill.svg";
     cover.className = "h-72 w-80 rounded-2xl bg-cover";
     cover.style.backgroundImage = `url('${songs[song].cover}')`;
     audioPlayer.play();
@@ -44,7 +44,7 @@ function prvSong() {
     audioPlayer.src = songs[song].src;
     songName.textContent = songs[song].name;
     artistName.textContent = songs[song].artist;
-    playImg.src = "../assets/Pause_fill.svg";
+    playImg.src = "./assets/Pause_fill.svg";
     cover.className = "h-72 w-80 rounded-2xl bg-cover";
     cover.style.backgroundImage = `url('${songs[song].cover}')`;
     audioPlayer.play();
@@ -52,10 +52,10 @@ function prvSong() {
 function playPause() { // Play and pause
     if (audioPlayer.paused) {
         audioPlayer.play();
-        playImg.src = "../assets/Pause_fill.svg";
+        playImg.src = "./assets/Pause_fill.svg";
     } else {
         audioPlayer.pause();
-        playImg.src = "../assets/Play_fill.svg";
+        playImg.src = "./assets/Play_fill.svg";
 
     }
 }
@@ -66,12 +66,12 @@ function padZero(number) {//add zero to left of 1 number time values
 
 document.addEventListener('DOMContentLoaded', function() {
     var element = document.querySelector('body');
-    element.classList.add("bg-[url('../assets/bg.jpg')]");
+    element.classList.add("bg-[url('./assets/bg.jpg')]");
   });
 
 document.addEventListener('DOMContentLoaded', function() {
     var element = document.getElementById('cover');
-    element.classList.add("bg-[url('../assets/cover-1.png')]");
+    element.classList.add("bg-[url('./assets/cover-1.png')]");
 });  
 
 let song = 0;

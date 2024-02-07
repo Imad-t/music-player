@@ -5,38 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Player</title>
   <link href="./output.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="../assets/Play_fill.svg">
+  <link rel="icon" type="image/x-icon" href="./assets/Play_fill.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[url('../assets/bg.jpg')] bg-cover flex justify-center items-center min-h-screen">
+<body class="bg-[url('./assets/bg.jpg')] bg-cover flex justify-center items-center min-h-screen">
   <div class="bg-playerbg opacity-70 p-6 w-fit h-fit rounded-2xl flex flex-col justify-center items-center">
-    <div id="cover" class="h-72 w-80 rounded-2xl bg-[url('../assets/cover-1.png')] bg-cover"></div>
+    <div id="cover" class="h-72 w-80 rounded-2xl bg-[url('./assets/cover-1.png')] bg-cover"></div>
     <h4 id="songName" class="mt-3 text-whiteish text-16px font-semibold">Lost in the City Lights</h4>
     <p id="artistName" class="text-lightgray text-xs font-semibold">Cosmo Sheldrake</p>
     <div class="w-full my-6">
         <div class="flex justify-between">
             <span id="time" class="text-lightgray text-xs">00:00</span>
-            <span id="songLength" class="text-lightgray text-xs">02:30</span>
+            <span id="songLength" class="text-lightgray text-xs">00:00</span>
         </div>
         <input type="range" min= "0" max= "100" value="0" id="seekBar" class="w-full h-1 cursor-pointer ">
         <audio id="audioPlayer">
-            <source src="../assets/lost-in-city-lights-145038.mp3" type="audio/mpeg">
+            <source src="./assets/lost-in-city-lights-145038.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
     <div class="flex items-center gap-4"> 
         <button id="prevButton" class="text-lightgray h-fit">
-            <img src="../assets/Stop_and_play_fill-1.svg">
+            <img src="./assets/Stop_and_play_fill-1.svg">
         </button>
         
         <button id="playButton" class="text-whiteish bg-pink rounded-full h-12 w-12  drop-shadow-pink-shadow">
-            <img id="playImg" src="../assets/Play_fill.svg" class="m-auto">
+            <img id="playImg" src="./assets/Play_fill.svg" class="m-auto">
         </button>
         
         <button id="nextButton" class="text-lightgray h-fit">
-            <img src="../assets/Stop_and_play_fill_reverse.svg">
+            <img src="./assets/Stop_and_play_fill_reverse.svg">
         </button>
     </div>
   </div>

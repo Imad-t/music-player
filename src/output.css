@@ -648,6 +648,14 @@ video {
   background-image: url('../assets/cover-1.png');
 }
 
+.bg-\[url\(\'\.\/assets\/bg\.jpg\'\)\] {
+  background-image: url('./assets/bg.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/cover-1\.png\'\)\] {
+  background-image: url('./assets/cover-1.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
