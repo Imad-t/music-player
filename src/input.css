@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+#seekBar {
+    overflow: hidden;
+    -webkit-appearance: none;
+}
+
+#seekBar::-webkit-slider-runnable-track {
+    height: 4px;
+    width: 4px;
+    -webkit-appearance: none;
+    color: #C93B76; /* Track color for Chrome */
+    margin-top: -1px;
+}
+
+#seekBar::-webkit-slider-thumb {
+    background-color: #C93B76;
+    width: 4px;
+    -webkit-appearance: none;
+    height: 10px;
+    background: #C93B76; 
+    box-shadow: -300px 0 0 300px #C93B76; 
+}
